@@ -1,0 +1,108 @@
+
+<style>
+  .game-container { padding: 1.5rem 0; font-family: var(--font-sans); }
+  .game-title { font-size: 28px; font-weight: 500; color: var(--text-primary); letter-spacing: -0.5px; margin: 0 0 4px; }
+  .game-subtitle { font-size: 13px; color: var(--text-muted); margin: 0 0 1.5rem; }
+  .genre-badge { display: inline-block; background: var(--bg-danger); color: var(--text-danger); font-size: 12px; padding: 3px 10px; border-radius: var(--radius); margin-bottom: 1.5rem; }
+  .section-label { font-size: 11px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 8px; }
+  .summary-box { background: var(--surface-1); border: 0.5px solid var(--border); border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; font-size: 15px; color: var(--text-secondary); line-height: 1.7; }
+  .chars-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 1.5rem; }
+  .char-card { background: var(--surface-2); border: 0.5px solid var(--border); border-radius: 12px; padding: 1rem 1.25rem; }
+  .char-card.main { border-left: 2px solid var(--border-danger); }
+  .char-avatar { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 500; font-size: 14px; margin-bottom: 10px; }
+  .av-red { background: var(--bg-danger); color: var(--text-danger); }
+  .av-purple { background: var(--bg-pro); color: var(--text-pro); }
+  .av-gray { background: var(--surface-1); color: var(--text-secondary); border: 0.5px solid var(--border); }
+  .char-name { font-size: 15px; font-weight: 500; color: var(--text-primary); margin: 0 0 2px; }
+  .char-role { font-size: 12px; color: var(--text-muted); margin: 0 0 8px; }
+  .char-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin: 0; }
+  .main-tag { display: inline-block; background: var(--bg-danger); color: var(--text-danger); font-size: 10px; padding: 2px 7px; border-radius: 4px; margin-bottom: 6px; }
+  .secondary-tag { display: inline-block; background: var(--surface-1); color: var(--text-muted); font-size: 10px; padding: 2px 7px; border-radius: 4px; margin-bottom: 6px; border: 0.5px solid var(--border); }
+  .npc-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  .npc-row { background: var(--surface-1); border: 0.5px solid var(--border); border-radius: 10px; padding: 12px 1rem; display: flex; gap: 12px; align-items: flex-start; }
+  .npc-icon { font-size: 20px; margin-top: 2px; }
+  .npc-name { font-size: 14px; font-weight: 500; color: var(--text-primary); margin: 0 0 2px; }
+  .npc-function { font-size: 12px; color: var(--text-accent); margin: 0 0 4px; }
+  .npc-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin: 0; }
+  .divider { border: none; border-top: 0.5px solid var(--border); margin: 1.5rem 0; }
+</style>
+
+<div class="game-container">
+  <h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;">Historia para juego indie de terror: Hollowrest</h2>
+
+  <div style="margin-bottom: 1rem;">
+    <div class="genre-badge">Terror psicológico · Indie</div>
+    <h1 class="game-title">Hollowrest</h1>
+    <p class="game-subtitle">Una historia de lo que el pueblo recuerda, y de lo que no quiere olvidar</p>
+  </div>
+
+  <p class="section-label">Sinopsis</p>
+  <div class="summary-box">
+    El pueblo de <strong>Hollowrest</strong> desapareció del mapa en 1987. Ningún registro, ningún sobreviviente oficial. Treinta y ocho años después, tú —un investigador de paraderos desconocidos— recibes una coordenada anónima y un sobre con una sola fotografía: tu madre, de quien no sabes nada desde que tenías cuatro años, parada frente a una iglesia que no debería existir.<br><br>
+    Al llegar, el pueblo <em>está ahí</em>. Intacto. Habitado. Y nadie dentro parece saber que el tiempo pasó. Ni que tú eres un extraño. Ni que algo en las paredes <em>respira</em>.
+  </div>
+
+  <hr class="divider">
+  <p class="section-label">Personajes principales</p>
+  <div class="chars-grid">
+    <div class="char-card main">
+      <div class="char-avatar av-red">EV</div>
+      <span class="main-tag">Protagonista</span>
+      <p class="char-name">Evan Mercer</p>
+      <p class="char-role">Investigador de personas desaparecidas, 36 años</p>
+      <p class="char-desc">Creció en orfanato. Metódico, frío, poco dado al miedo. Eligió su profesión sin entender del todo por qué. Al entrar a Hollowrest descubre que su instinto —lo que siempre creyó una habilidad profesional— es algo que el pueblo <em>despertó</em> en él cuando era niño. Cuanto más recuerda, más se difumina la línea entre lo que investiga y lo que es.</p>
+    </div>
+    <div class="char-card main">
+      <div class="char-avatar av-purple">MR</div>
+      <span class="main-tag">Antagonista / madre</span>
+      <p class="char-name">Margaret Mercer</p>
+      <p class="char-role">Residente de Hollowrest, edad incierta</p>
+      <p class="char-desc">No envejeció. Recibe a Evan con una calma que no encaja con treinta y ocho años de ausencia. Dice que "lo esperaba". Conoce el pueblo como si fuera parte de él —porque lo es. Margaret fue la primera en descubrir lo que vive bajo la iglesia, y tomó una decisión que le costó a su hijo la memoria y a ella la humanidad. Quiere que Evan termine lo que ella empezó.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+  <p class="section-label">Personajes secundarios · PNJs con rol de juego</p>
+  <div class="npc-grid">
+    <div class="npc-row">
+      <div class="npc-icon"><i class="ti ti-stethoscope" aria-hidden="true" style="color: var(--text-secondary);"></i></div>
+      <div>
+        <p class="npc-name">Dr. Aldous Finch</p>
+        <p class="npc-function">El médico del pueblo · Puerta de entrada</p>
+        <p class="npc-desc">Atiende la clínica con la misma rutina desde 1987. Tiene el mapa completo del pueblo y te lo entregará sólo si le consigues las tres firmas de los "residentes fundadores". Es el primero en mentirte con una sonrisa. Su diario, escondido bajo la camilla, revela que lleva décadas tratando una enfermedad que no tiene nombre.</p>
+      </div>
+    </div>
+    <div class="npc-row">
+      <div class="npc-icon"><i class="ti ti-building-church" aria-hidden="true" style="color: var(--text-secondary);"></i></div>
+      <div>
+        <p class="npc-name">Padre Cem</p>
+        <p class="npc-function">El sacerdote · Guardián del archivo</p>
+        <p class="npc-desc">Controla el acceso a los sótanos de la iglesia donde están los registros del pueblo. Pedirá un "acto de fe" antes de dejarte pasar: confesarte. Usará lo que le digas para manipularte más adelante. Guarda algo en el confesionario que no pertenece a ninguna religión conocida.</p>
+      </div>
+    </div>
+    <div class="npc-row">
+      <div class="npc-icon"><i class="ti ti-tools" aria-hidden="true" style="color: var(--text-secondary);"></i></div>
+      <div>
+        <p class="npc-name">Rena Voss</p>
+        <p class="npc-function">La ferretera · Proveedora de herramientas</p>
+        <p class="npc-desc">Gestiona el único lugar donde conseguir linternas, llaves maestras y objetos para puzzles. No habla mucho, pero observa todo. Si la ayudas a "encontrar" a su esposo desaparecido —que lleva desaparecido desde 1987 sin que ella lo note— te da acceso al almacén trasero donde hay algo que no debería estar en una ferretería.</p>
+      </div>
+    </div>
+    <div class="npc-row">
+      <div class="npc-icon"><i class="ti ti-book" aria-hidden="true" style="color: var(--text-secondary);"></i></div>
+      <div>
+        <p class="npc-name">Niña sin nombre</p>
+        <p class="npc-function">La mensajera · Guía corrupta</p>
+        <p class="npc-desc">Aparece en lugares imposibles. Te entrega notas que parecen de Evan —escritas con su letra, en tiempo futuro. A veces te lleva a zonas clave del mapa. A veces te lleva adonde no deberías ir. Nunca dice su nombre. Si le preguntas a alguien del pueblo por ella, todos responden que "esa niña murió hace mucho".</p>
+      </div>
+    </div>
+    <div class="npc-row">
+      <div class="npc-icon"><i class="ti ti-key" aria-hidden="true" style="color: var(--text-secondary);"></i></div>
+      <div>
+        <p class="npc-name">Samuel Peck</p>
+        <p class="npc-function">El alcalde · Barrera política</p>
+        <p class="npc-desc">Controla qué zonas del pueblo son "accesibles para visitantes". Para que te deje entrar al distrito norte necesitas ganarte la confianza del pueblo completando tareas de otros NPCs. Tiene una deuda con Margaret que nunca menciona. Descubrirla cambia completamente su comportamiento hacia ti.</p>
+      </div>
+    </div>
+  </div>
+</div>

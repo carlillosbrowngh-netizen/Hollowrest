@@ -1,0 +1,91 @@
+
+<style>
+  .obj-wrap { padding: 1.5rem 0; font-family: var(--font-sans); }
+  .section-label { font-size: 11px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 8px; }
+  .main-obj { background: var(--surface-1); border: 0.5px solid var(--border); border-left: 2px solid var(--border-danger); border-radius: 12px; padding: 1.25rem; margin-bottom: 1.5rem; }
+  .main-obj h2 { font-size: 20px; font-weight: 500; color: var(--text-primary); margin: 0 0 8px; }
+  .main-obj p { font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin: 0; }
+  .divider { border: none; border-top: 0.5px solid var(--border); margin: 1.5rem 0; }
+  .phases { display: grid; grid-template-columns: 1fr; gap: 10px; margin-bottom: 1.5rem; }
+  .phase { background: var(--surface-2); border: 0.5px solid var(--border); border-radius: 10px; padding: 1rem 1.25rem; display: flex; gap: 14px; align-items: flex-start; }
+  .phase-num { font-size: 22px; font-weight: 500; color: var(--text-muted); min-width: 28px; line-height: 1.2; }
+  .phase-name { font-size: 14px; font-weight: 500; color: var(--text-primary); margin: 0 0 4px; }
+  .phase-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin: 0; }
+  .endings-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 1.5rem; }
+  .ending-card { background: var(--surface-2); border: 0.5px solid var(--border); border-radius: 12px; padding: 1rem; }
+  .ending-label { font-size: 10px; font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; margin: 0 0 6px; }
+  .ending-bad { color: var(--text-danger); }
+  .ending-neutral { color: var(--text-warning); }
+  .ending-true { color: var(--text-success); }
+  .ending-title { font-size: 14px; font-weight: 500; color: var(--text-primary); margin: 0 0 6px; }
+  .ending-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin: 0; }
+  .twist-box { background: var(--bg-danger); border: 0.5px solid var(--border-danger); border-radius: 12px; padding: 1rem 1.25rem; }
+  .twist-box p { font-size: 14px; color: var(--text-danger); line-height: 1.7; margin: 0; }
+  .twist-box strong { font-weight: 500; }
+</style>
+
+<div class="obj-wrap">
+  <h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;">Objetivo final de Hollowrest</h2>
+
+  <p class="section-label">Objetivo central</p>
+  <div class="main-obj">
+    <h2>Sellar lo que hay debajo — o liberarlo</h2>
+    <p>
+      Bajo la iglesia de Hollowrest existe una <em>Fractura</em>: una grieta en la que el tiempo no avanza, el olvido se vuelve físico y los muertos no terminan de irse. Margaret la encontró en 1987, intentó cerrarla usando a Evan —entonces un niño— como ancla de memoria, y falló. El pueblo quedó atrapado en el umbral entre existir y desaparecer. El objetivo final de Evan es llegar a la Fractura, entender qué necesita para cerrarse, y elegir el precio que está dispuesto a pagar.
+    </p>
+  </div>
+
+  <hr class="divider">
+  <p class="section-label">Fases del objetivo</p>
+  <div class="phases">
+    <div class="phase">
+      <div class="phase-num">1</div>
+      <div>
+        <p class="phase-name">Conseguir las cuatro llaves de los NPCs</p>
+        <p class="phase-desc">Cada personaje secundario custodia una parte del acceso al sótano de la iglesia sin saberlo conscientemente. Finch tiene el plano, el Padre Cem tiene la llave física, Rena tiene el componente que anula las trampas del pasillo, y Samuel Peck tiene la firma que desactiva el sello exterior. Obtenerlos a todos revela que todos sabían para qué servían.</p>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="phase-num">2</div>
+      <div>
+        <p class="phase-name">Descender y enfrentar el Registro</p>
+        <p class="phase-desc">En el fondo del sótano hay una sala donde la Fractura proyecta memorias: las de todos los habitantes del pueblo y, al final, las de Evan de cuando era niño. Aquí el juego fuerza al jugador a revivir el ritual fallido de 1987 desde la perspectiva del niño. Ver qué hizo Margaret exactamente —y por qué— es el punto de inflexión moral de la historia.</p>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="phase-num">3</div>
+      <div>
+        <p class="phase-name">Confrontar a Margaret ante la Fractura</p>
+        <p class="phase-desc">Margaret no huye ni ataca. Espera. Le explica a Evan que la Fractura sólo se cierra si alguien la atraviesa voluntariamente y se convierte en su nueva ancla, quedando atrapado dentro para siempre —o si se destruye el ancla actual, que ahora es ella, liberando todo lo que la Fractura contiene hacia el mundo exterior. Aquí el jugador elige.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+  <p class="section-label">Finales posibles</p>
+  <div class="endings-grid">
+    <div class="ending-card">
+      <p class="ending-label ending-bad">Final malo</p>
+      <p class="ending-title">Evan entra a la Fractura</p>
+      <p class="ending-desc">Evan toma el lugar de Margaret. El pueblo "despierta" y los residentes salen al mundo, pero Evan queda atrapado en un loop eterno de las mismas memorias. La niña sin nombre, por primera vez, le sonríe desde afuera.</p>
+    </div>
+    <div class="ending-card">
+      <p class="ending-label ending-neutral">Final neutral</p>
+      <p class="ending-title">Destruir el ancla</p>
+      <p class="ending-desc">Evan destruye a Margaret. La Fractura colapsa, el pueblo se desintegra con todo lo que contenía —incluidos sus habitantes— y Evan sale solo. Se salva, pero Hollowrest deja de existir para siempre, incluida su madre.</p>
+    </div>
+    <div class="ending-card">
+      <p class="ending-label ending-true">Final verdadero</p>
+      <p class="ending-title">Lo que Margaret no dijo</p>
+      <p class="ending-desc">Si el jugador encontró todos los diarios ocultos, descubre una tercera opción: la Fractura no necesita un ancla viva. Necesita que alguien <em>recuerde libremente</em> lo que ocurrió sin que le hayan borrado la memoria. Evan lo hace. La Fractura se cierra sola. Margaret descansa.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+  <p class="section-label">El giro que lo une todo</p>
+  <div class="twist-box">
+    <p>
+      La niña sin nombre es Evan. La versión de él que quedó dentro de la Fractura cuando Margaret intentó el ritual en 1987. Lleva treinta y ocho años guiando a su yo adulto de vuelta al pueblo porque es la única forma de que ambos puedan existir completos. <strong>Las notas escritas con la letra de Evan no eran del futuro: eran del pasado.</strong>
+    </p>
+  </div>
+</div>
